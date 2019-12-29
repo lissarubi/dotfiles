@@ -1,10 +1,14 @@
 #!/bin/sh
 
 #Atulizando repositórios
-sudo apt update
+sudo apt update -y
+
+#Removendo travas do APT
+sudo rm /var/lib/dpkg/lock-frontend
+sudo rm /var/cache/apt/archives/lock
 
 #Instalando programas via APT
-sudo apt install flameshot audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop i3 i3blocks i3status neofetch nodejs ranger snapd ssh tmux vim zsh aptitude python-pip python3-pip suckless-tools chromium-codecs-ffmpeg-extra zathura lamp-server sxiv traceroute sl guake build-essential
+sudo apt install zsh flameshot audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop i3 i3blocks i3status neofetch nodejs ranger snapd ssh tmux vim zsh aptitude python-pip python3-pip suckless-tools chromium-codecs-ffmpeg-extra zathura lamp-server^ sxiv traceroute sl guake build-essential
 
 #Instalando Photogimp via Snap
 sudo snap install photogimp
@@ -31,3 +35,18 @@ cd ~/Downloads
 wget  https://download3.operacdn.com/pub/opera/desktop/65.0.3467.69/linux/opera-stable_65.0.3467.69_amd64.deb
 sudo dpkg -i opera-stable_65.0.3467.69_amd64.deb
 cd ~
+
+#Instalando o Bat
+cd ~/Downloads
+wget https://github.com/sharkdp/bat/releases/download/v0.12.1/bat_0.12.1_amd64.deb
+sudo dpkg -i bat_0.12.1_amd64.deb
+cd ~
+
+#Atulizando o sistema
+sudo apt upgrade
+
+#Removendo DEBS
+rm -rf ~/Downloads/*
+
+#Reiniciando o sistema
+reboot
