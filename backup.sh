@@ -8,19 +8,13 @@ sudo rm /var/lib/dpkg/lock-frontend
 sudo rm /var/cache/apt/archives/lock
 
 #Instalando programas via APT
-sudo apt install zsh npm flameshot audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop i3 i3blocks i3status neofetch nodejs ranger snapd ssh tmux vim zsh aptitude python-pip python3-pip suckless-tools chromium-codecs-ffmpeg-extra zathura lamp-server^ sxiv traceroute sl guake build-essential
+sudo apt install zsh curl flameshot audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop i3 i3blocks i3status neofetch nodejs ranger snapd ssh tmux vim zsh aptitude python-pip python3-pip suckless-tools chromium-codecs-ffmpeg-extra zathura lamp-server^ sxiv traceroute sl guake build-essential g++ gcc make vivaldi-snapshot
 
 #Instalando programas via Snap
 sudo snap install photogimp opera
 
 #Instalando Visual Studio Code via Snap
 sudo snap install code --classic
-
-#Instalando Vivaldi Browser
-cd ~/Downloads
-wget https://downloads.vivaldi.com/stable/vivaldi-stable_2.10.1745.21-1_amd64.deb
-sudo dpkg -i vivaldi-stable_2.10.1745.21-1_amd64.deb
-cd ~
 
 #Instalando Kdenlive
 mkdir ~/software
@@ -35,6 +29,10 @@ cd ~/Downloads
 wget https://github.com/sharkdp/bat/releases/download/v0.12.1/bat_0.12.1_amd64.deb
 sudo dpkg -i bat_0.12.1_amd64.deb
 cd ~
+
+#Instalando o Nodejs
+curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+sudo apt install -y nodejs
 
 #Atulizando o sistema
 sudo apt upgrade
