@@ -34,6 +34,12 @@ cd ~
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt install -y nodejs
 
+#Instalando Oh My ZSH
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
+#Instalando Powerlevel 10K theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+
 #Atulizando o sistema
 sudo apt upgrade
 
