@@ -41,7 +41,7 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
 #Atulizando o sistema
-sudo apt upgrade
+sudo apt upgrade -y ; sudo apt dist-upgrade -y
 
 #Removendo DEBS
 rm -rf ~/Downloads/*
