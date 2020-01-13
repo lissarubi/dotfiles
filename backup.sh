@@ -8,13 +8,21 @@ sudo rm /var/lib/dpkg/lock-frontend
 sudo rm /var/cache/apt/archives/lock
 
 #Instalando programas via APT
-sudo apt install supertux xorg mysql-workbench zsh curl flameshot audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop i3 i3blocks i3status neofetch nodejs ranger snapd ssh tmux vim zsh aptitude python-pip python3-pip suckless-tools chromium-codecs-ffmpeg-extra zathura lamp-server^ sxiv traceroute sl guake build-essential g++ gcc make
+sudo apt install -y supertux xorg mysql-workbench zsh curl flameshot audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop i3 i3blocks i3status neofetch nodejs ranger snapd ssh tmux vim zsh aptitude python-pip python3-pip suckless-tools chromium-codecs-ffmpeg-extra zathura lamp-server^ sxiv traceroute sl guake build-essential g++ gcc make
 
 #Instalando programas via Snap
 sudo snap install photogimp opera
 
 #Instalando Visual Studio Code via Snap
 sudo snap install code --classic
+
+#Colocando SNAP no /etc/environment
+
+echo /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin >> environment
+
+sudo rm /etc/environment
+
+sudo mv environment /etc
 
 #Instalando Kdenlive
 mkdir ~/software
