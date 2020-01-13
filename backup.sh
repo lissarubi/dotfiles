@@ -24,6 +24,9 @@ sudo rm /etc/environment
 
 sudo mv environment /etc
 
+#Colocando SNAPS no menu
+sudo echo emulate sh -c 'source /etc/profile.d/apps-bin-path.sh' >> /etc/zsh/zprofile
+
 #Instalando Kdenlive
 mkdir ~/software
 cd ~/software 
