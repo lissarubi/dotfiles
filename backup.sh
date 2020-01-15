@@ -42,7 +42,7 @@ sudo dpkg -i bat_0.12.1_amd64.deb
 cd ~
 
 #Instalando o Nodejs
-curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install -y nodejs
 
 #Instalando Powerlevel 10K theme
