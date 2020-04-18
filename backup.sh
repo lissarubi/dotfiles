@@ -8,7 +8,7 @@ sudo rm /var/lib/dpkg/lock-frontend
 sudo rm /var/cache/apt/archives/lock
 
 #Instalando programas via APT
-sudo apt install -y gedit gparted xorg zsh curl audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop i3 i3blocks i3status neofetch nodejs ranger snapd ssh tmux vim zsh aptitude python-pip python3-pip suckless-tools chromium-codecs-ffmpeg-extra zathura sxiv traceroute sl guake build-essential g++ gcc make
+sudo apt install -y gedit gparted xorg zsh curl audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop neofetch nodejs ranger snapd ssh tmux vim zsh aptitude python-pip python3-pip suckless-tools chromium-codecs-ffmpeg-extra zathura sxiv traceroute sl guake build-essential g++ gcc make
 
 #Instalando programas via Snap
 sudo snap install photogimp opera
