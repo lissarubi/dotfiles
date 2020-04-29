@@ -34,6 +34,9 @@ cd ~
 curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
+#Instalando programas via NPM
+sudo npm install expo prettier typescript -g
+
 #Instalando Powerlevel 10K theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
