@@ -8,7 +8,17 @@ sudo rm /var/lib/dpkg/lock-frontend
 sudo rm /var/cache/apt/archives/lock
 
 #Instalando programas via APT
-sudo apt install -y gedit gparted xorg zsh curl audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop neofetch nodejs ranger snapd ssh tmux vim zsh aptitude python-pip python3-pip suckless-tools chromium-codecs-ffmpeg-extra zathura sxiv traceroute sl guake build-essential g++ gcc make postgresql postgresql-contrib fonts-firacode
+sudo apt install -y automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev zlib1g-dev sqlite3 libsqlite3-dev gparted xorg zsh curl audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop neofetch ranger snapd ssh tmux vim zsh aptitude python-pip python3-pip suckless-tools chromium-codecs-ffmpeg-extra zathura sxiv traceroute sl guake build-essential g++ gcc make postgresql postgresql-contrib fonts-firacode
+
+# Instalando ASDF
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.8
+
+# Instalando linguagens com ASDF
+asdf install ruby 2.7.1
+asdf install nodejs 14.0.0
+
+asdf global ruby 2.7.1
+asdf global nodejs 14.0.0
 
 #Instalando programas via Snap
 sudo snap install photogimp opera
