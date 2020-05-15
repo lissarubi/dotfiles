@@ -20,6 +20,9 @@ asdf install nodejs 14.0.0
 asdf global ruby 2.7.1
 asdf global nodejs 14.0.0
 
+#Instalando Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 #Instalando programas via Snap
 sudo snap install photogimp opera
 
