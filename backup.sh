@@ -21,7 +21,7 @@ asdf global ruby 2.7.1
 asdf global nodejs 14.0.0
 
 #Instalando gems
-gem install colorls betterfile
+gem install colorls betterfile colorize runcs gcli
 
 #Instalando Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
