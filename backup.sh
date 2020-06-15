@@ -15,10 +15,10 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.8
 
 # Instalando linguagens com ASDF
 asdf install ruby 2.7.1
-asdf install nodejs 14.0.0
+asdf install nodejs 14.4.0
 
 asdf global ruby 2.7.1
-asdf global nodejs 14.0.0
+asdf global nodejs 14.4.0
 
 #Instalando gems
 gem install colorls betterfile colorize runcs gcli
