@@ -14,6 +14,10 @@ sudo apt install -y ffmpeg automake autoconf libreadline-dev libncurses-dev libs
 mkdir ~/.config/nvim
 git clone https://github.com/edersonferreira/nvim-cfg ~/.config/nvim
 
+# Using "Main" to default branch
+
+git config --global init.defaultBranch main
+
 # Installing ASDF
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.8
 
