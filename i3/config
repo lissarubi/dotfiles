@@ -12,7 +12,7 @@ floating_modifier $super
 exec --no-startup-id hsetroot -center ~/.wallpaper.png
 exec --no-startup-id xsettingsd &
 exec --no-startup-id compton -b
-exec --no-startup-id polybar -r bar
+exec --no-startup-id polybar -r main
 exec --no-startup-id feh --bg-fill Pictures/bg.jpg
 
 # start a terminal
@@ -37,6 +37,14 @@ bindsym $super+Ctrl+Right resize shrink width 10 px or 10 ppt
 bindsym $super+Ctrl+Up resize grow height 10 px or 10 ppt
 bindsym $super+Ctrl+Down resize shrink height 10 px or 10 ppt
 bindsym $super+Ctrl+Left resize grow width 10 px or 10 ppt
+
+# gaps between windows
+bindsym $super+s gaps inner current plus 5
+bindsym $super+Shift+s gaps inner current minus 5
+
+# gaps of outer
+bindsym $super+o gaps outer current plus 5
+bindsym $super+Shift+o gaps outer current minus 5
 
 #change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
@@ -78,7 +86,6 @@ bindsym $super+v split v
 bindsym $super+f fullscreen toggle
 
 # change container layout
-bindsym $super+s layout stacking
 bindsym $super+w layout tabbed
 bindsym $super+e layout default
 
@@ -128,8 +135,10 @@ mode "resize" {
 }
 bindsym $super+r mode "resize"
 
+smart_gaps on
+smart_borders on
 # window rules, you can find the window class using xprop
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 0 
 assign [class=URxvt] 1
 assign [class=Firefox|Transmission-gtk] 2
 assign [class=Thunar|File-roller] 3

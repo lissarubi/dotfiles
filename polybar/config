@@ -27,7 +27,7 @@ primary = #444
 secondary = #e60053
 alert = #bd2c40
 
-[bar/bar]
+[bar/main]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 27
@@ -58,8 +58,8 @@ font-2 = "Wuncon Siji:pixelsize=10;1"
 ;font-3 = FontAwesome:size=7
 
 modules-left = bspwm i3
-modules-center = 
-modules-right = filesystem xbacklight alsa memory cpu wlan eth temperature date powermenu
+modules-center =
+modules-right = filesystem xbacklight pavolume memory cpu wlan eth temperature date powermenu
 
 tray-position = right
 tray-padding = 2
@@ -87,9 +87,7 @@ label = %title:0:30:...%
 [module/filesystem]
 type = internal/fs
 interval = 25
-
 mount-0 = /
-
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
@@ -152,7 +150,6 @@ label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 ; Separator in between workspaces
 ; label-separator = |
-
 
 [module/mpd]
 type = internal/mpd
@@ -259,60 +256,18 @@ format-underline = #333
 
 label = %date% %time%
 
-[module/pulseaudio]
-type = internal/pulseaudio
-
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
-label-volume-foreground = ${root.foreground}
-
-label-muted = 🔇 muted
-label-muted-foreground = #fff
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
-
-[module/alsa]
-type = internal/alsa
-
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
-label-volume-foreground = ${root.foreground}
-
-format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #333
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+[module/pavolume]
+type = custom/script
+tail = true
+label = %output%
+exec = ~/.config/polybar/pavolume.sh --listen
+click-right = exec pavucontrol
+click-left = ~/.config/polybar/pavolume.sh --togmute
+scrool-up = ~/.config/polybar/pavolume.sh --up
+scrool-down = ~/.config/polybar/pavolume.sh --down
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-underline = #333
 
 [module/battery]
 type = internal/battery
