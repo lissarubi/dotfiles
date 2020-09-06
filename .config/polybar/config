@@ -42,14 +42,14 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-;border-size = 4
+;border-size = 0
 ;border-color = #00000000
 
 padding-left = 0
 padding-right = 0
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
 ;font-0 = fixed:pixelsize=10;1
 font-0 = "xos4 Terminess Powerline:pixelsize=10;1"
@@ -259,7 +259,7 @@ label = %date% %time%
 [module/pavolume]
 type = custom/script
 tail = true
-label = %output%
+label = VOL: %output%
 exec = ~/.config/polybar/pavolume.sh --listen
 click-right = exec pavucontrol
 click-left = ~/.config/polybar/pavolume.sh --togmute
