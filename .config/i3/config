@@ -17,7 +17,7 @@ exec --no-startup-id feh --bg-fill Pictures/bg.jpg
 exec --no-startup-id albert
 
 # start a terminal
-bindsym $super+Return exec i3-sensible-terminal
+bindsym $super+Return exec alacritty
 
 # alt tab like ($super+tab)
 bindsym $super+Tab exec rofi -modi combi -combi-modi window -show combi -theme "purple" -font 'Sans 12' -icon-theme "Flat-Remix-Dark-Blue" -show-icons

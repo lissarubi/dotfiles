@@ -1,0 +1,43 @@
+font:
+  # The size to use.
+  size: 12
+
+  normal:
+    family: Fira Code Medium
+    # Style can be specified to pick a specific face.
+
+  # The bold font face
+  bold:
+    family: Fira Code
+    # Style can be specified to pick a specific face.
+
+  # The italic font face
+  italic:
+    family: Fira Code Italic
+    # Style can be specified to pick a specific face.
+
+colors:
+  # Normal colors
+  normal:
+    black:   '#000000'
+    red:     '#fe0100'
+    green:   '#33ff00'
+    yellow:  '#feff00'
+    blue:    '#0066ff'
+    magenta: '#cc00ff'
+    cyan:    '#00ffff'
+    white:   '#d0d0d0'
+
+  # Bright colors
+  bright:
+    black:   '#808080'
+    red:     '#fe0100'
+    green:   '#33ff00'
+    yellow:  '#feff00'
+    blue:    '#0066ff'
+    magenta: '#cc00ff'
+    cyan:    '#00ffff'
+    white:   '#FFFFFF'
+
+# Background Opacity
+background_opacity: 0.8
