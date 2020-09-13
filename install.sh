@@ -62,7 +62,7 @@ sudo dpkg -i bat_0.12.1_amd64.deb
 cd ~
 
 #Installing programs using NPM
-sudo npm install expo prettier typescript markpdf -g
+sudo npm install expo prettier typescript markpdf @prettier/plugin-php -g
 
 #Installing Powerline10k theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
