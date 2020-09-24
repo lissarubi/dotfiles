@@ -14,10 +14,6 @@ sudo apt install -y ffmpeg automake autoconf libreadline-dev libncurses-dev libs
 mkdir ~/.config/nvim
 git clone https://github.com/edersonferreira/nvim-cfg ~/.config/nvim
 
-# Using "Main" to default branch
-
-git config --global init.defaultBranch main
-
 # Installing ASDF
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.7.8
 
@@ -35,7 +31,7 @@ asdf global ruby 2.7.1
 asdf global nodejs 14.4.0
 
 #Installing gems
-gem install colorls betterfile colorize runcs gcli generategem
+gem install colorls betterfile colorize runcs gcli generategem solargraph
 
 #Instalando programs with snap
 sudo snap install photogimp opera
@@ -62,7 +58,7 @@ sudo dpkg -i bat_0.12.1_amd64.deb
 cd ~
 
 #Installing programs using NPM
-sudo npm install expo prettier typescript markpdf @prettier/plugin-php -g
+sudo npm install expo prettier typescript markpdf @prettier/plugin-php intelephense -g
 
 #Installing Powerline10k theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
