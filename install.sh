@@ -6,7 +6,7 @@ sudo rm /var/lib/dpkg/lock-frontend
 sudo rm /var/cache/apt/archives/lock
 
 #Installing programs using APT
-sudo apt install -y ffmpeg automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev zlib1g-dev sqlite3 libsqlite3-dev gparted xorg zsh curl audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop neofetch ranger snapd ssh tmux vim zsh aptitude suckless-tools chromium-codecs-ffmpeg-extra zathura sxiv traceroute sl guake build-essential g++ gcc make postgresql postgresql-contrib libpq-dev fonts-firacode supertux  ack breeze xclip flameshot neovim pavucontrol re2c libjpeg-dev libonig-dev libzip-dev composer
+sudo apt install -y ffmpeg automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev zlib1g-dev sqlite3 libsqlite3-dev gparted xorg zsh curl audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop neofetch ranger snapd ssh tmux vim zsh aptitude suckless-tools chromium-codecs-ffmpeg-extra zathura sxiv traceroute sl guake build-essential g++ gcc make postgresql postgresql-contrib libpq-dev fonts-firacode supertux  ack breeze xclip flameshot neovim pavucontrol re2c libjpeg-dev libonig-dev libzip-dev composer bat
 
 
 # Installing my Nvim config
@@ -52,12 +52,6 @@ cd ~/software
 wget https://files.kde.org/kdenlive/release/kdenlive-20.04.0-x86_64.appimage
 chmod +x kdenlive-20.04.0-x86_64.appimage
 mv kdenlive-20.04.0-x86_64.appimage kdenlive20.04.appimage
-cd ~
-
-#Installing Bat
-cd ~/Downloads
-wget https://github.com/sharkdp/bat/releases/download/v0.12.1/bat_0.12.1_amd64.deb
-sudo dpkg -i bat_0.12.1_amd64.deb
 cd ~
 
 #Installing programs using NPM
