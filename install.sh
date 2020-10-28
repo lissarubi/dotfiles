@@ -8,6 +8,20 @@ sudo rm /var/cache/apt/archives/lock
 #Installing programs using APT
 sudo apt install -y ffmpeg automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev zlib1g-dev sqlite3 libsqlite3-dev gparted xorg zsh curl audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop neofetch ranger snapd ssh tmux vim zsh aptitude suckless-tools chromium-codecs-ffmpeg-extra zathura sxiv traceroute sl guake build-essential g++ gcc make postgresql postgresql-contrib libpq-dev fonts-firacode supertux  ack breeze xclip flameshot neovim pavucontrol re2c libjpeg-dev libonig-dev libzip-dev composer bat rofi lxappearance feh compton
 
+# Installing Polybar
+
+sudo apt-get install \
+  cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev \
+  libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev \
+  libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen \
+  xcb-proto libxcb-xrm-dev i3-wm libasound2-dev libmpdclient-dev \
+  libiw-dev libcurl4-openssl-dev libpulse-dev \
+  libxcb-composite0-dev xcb libxcb-ewmh2
+git clone https://github.com/jaagr/polybar.git
+cd polybar
+git tag # see what version do you need
+git checkout 3.4.1
+./build.sh
 
 # Installing my Nvim config
 
