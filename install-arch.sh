@@ -3,7 +3,7 @@
 sudo pacman -Syu
 
 #Installing programs using APT
-sudo pacman -S ffmpeg automake autoconf gparted xorg zsh curl audacity w3m supertux cmatrix frei0r-plugins git htop neofetch ranger snapd ssh tmux vim zathura sxiv traceroute sl guake build-essential g++ gcc make postgresql fonts-firacode supertux  ack xclip flameshot neovim pavucontrol composer bat rofi lxappearance feh compton polybar
+sudo pacman -S ffmpeg automake autoconf gparted xorg zsh curl audacity w3m supertux cmatrix frei0r-plugins git htop neofetch ranger snapd ssh tmux vim zathura sxiv traceroute sl guake build-essential g++ gcc make postgresql fonts-firacode supertux  ack xclip flameshot neovim pavucontrol composer bat rofi lxappearance feh compton polybar php
 
 
 
@@ -23,16 +23,12 @@ sudo makepkg -si
 asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
-asdf plugin-add php https://github.com/asdf-community/asdf-php.git
 
 asdf install ruby 2.7.1
 asdf global ruby 2.7.1
 
 asdf install nodejs 14.4.0
 asdf global nodejs 14.4.0
-
-asdf install php 7.4.0
-asdf global php 7.4.0
 
 #Installing gems
 gem install colorls betterfile colorize runcs gcli generategem solargraph
