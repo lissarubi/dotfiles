@@ -29,7 +29,10 @@ mkdir ~/.config/nvim
 git clone https://github.com/edersonferreira/nvim-cfg ~/.config/nvim
 
 # Installing ASDF
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
+
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+cd ~/.asdf
+git checkout "$(git describe --abbrev=0 --tags)"
 
 # Installing languages with ASDF
 
@@ -37,8 +40,8 @@ asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 
-asdf install ruby 2.7.1
-asdf global ruby 2.7.1
+asdf install ruby 2.7.2
+asdf global ruby 2.7.2
 
 asdf install nodejs 14.4.0
 asdf global nodejs 14.4.0

@@ -3,9 +3,7 @@
 sudo pacman -Syu
 
 #Installing programs using APT
-sudo pacman -S ffmpeg automake autoconf gparted xorg zsh curl audacity w3m supertux cmatrix frei0r-plugins git htop neofetch ranger snapd ssh tmux vim zathura sxiv traceroute sl guake build-essential g++ gcc make postgresql fonts-firacode supertux  ack xclip flameshot neovim pavucontrol composer bat rofi lxappearance feh compton polybar php
-
-
+sudo pacman -S ffmpeg automake autoconf gparted xorg zsh curl audacity w3m supertux cmatrix frei0r-plugins git htop neofetch ranger snapd openssh tmux vim zathura sxiv traceroute sl guake base-devel gcc make postgresql ttf-fira-code supertux  ack xclip flameshot neovim pavucontrol composer bat rofi lxappearance feh compton polybar php
 
 # Installing my Nvim config
 
@@ -14,9 +12,9 @@ git clone https://github.com/edersonferreira/nvim-cfg ~/.config/nvim
 
 # Installing ASDF
 
-git clone https://aur.archlinux.org/asdf-vm.git
-cd asdf-vm
-sudo makepkg -si
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf
+cd ~/.asdf
+git checkout "$(git describe --abbrev=0 --tags)"
 
 # Installing languages with ASDF
 
@@ -24,8 +22,8 @@ asdf plugin-add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
 asdf plugin-add ruby https://github.com/asdf-vm/asdf-ruby.git
 
-asdf install ruby 2.7.1
-asdf global ruby 2.7.1
+asdf install ruby 2.7.2
+asdf global ruby 2.7.2
 
 asdf install nodejs 14.4.0
 asdf global nodejs 14.4.0
@@ -33,15 +31,32 @@ asdf global nodejs 14.4.0
 #Installing gems
 gem install colorls betterfile colorize runcs gcli generategem solargraph
 
-#Instalando programs with snap
-#sudo snap install photogimp opera
+#Installing Snap
+
+git clone https://aur.archlinux.org/snapd.git
+cd snapd
+makepkg -si
+
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+
+#Installing programs with Snap
+sudo snap install photogimp opera
 
 #Installing VSCode using Snap
-#sudo snap install code --classic
+sudo snap install code --classic
 
 #Installing OBS Studio
-# sudo add-apt-repository ppa:obsproject/obs-studio
-# sudo apt-get update && sudo apt-get install obs-studio
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt-get update && sudo apt-get install obs-studio
+
+#Installing OhMyZSH plugins and themes
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 #Installing Kdenlive
 mkdir ~/software
