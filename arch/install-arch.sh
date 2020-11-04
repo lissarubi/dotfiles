@@ -3,7 +3,7 @@
 sudo pacman -Syu
 
 #Installing programs using APT
-sudo pacman -S ffmpeg automake autoconf gparted xorg zsh curl audacity w3m supertux cmatrix frei0r-plugins git htop neofetch ranger snapd openssh tmux vim zathura sxiv traceroute sl guake base-devel gcc make postgresql ttf-fira-code supertux  ack xclip flameshot neovim pavucontrol composer bat rofi lxappearance feh compton polybar php
+sudo pacman -S ffmpeg automake autoconf gparted xorg zsh curl audacity w3m supertux cmatrix frei0r-plugins git htop neofetch ranger snapd openssh tmux vim zathura sxiv traceroute sl guake base-devel gcc make postgresql ttf-fira-code supertux  ack xclip flameshot neovim pavucontrol composer bat rofi lxappearance feh compton polybar php obs-studio
 
 # Installing my Nvim config
 
@@ -72,8 +72,8 @@ sudo npm install expo prettier typescript markpdf @prettier/plugin-php intelephe
 #Installing Powerline10k theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
-#Apt upgrade
-sudo apt upgrade -y ; sudo apt dist-upgrade -y
+#pacman upgrade
+sudo pacman -Syu
 
 #Removing DEBS
 rm -rf ~/Downloads/*
