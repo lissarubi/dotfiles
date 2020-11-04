@@ -46,18 +46,6 @@ sudo snap install photogimp opera
 #Installing VSCode using Snap
 sudo snap install code --classic
 
-#Installing OBS Studio
-sudo add-apt-repository ppa:obsproject/obs-studio
-sudo apt-get update && sudo apt-get install obs-studio
-
-#Installing OhMyZSH plugins and themes
-
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-
 #Installing Kdenlive
 mkdir ~/software
 cd ~/software 
@@ -80,3 +68,12 @@ rm -rf ~/Downloads/*
 
 #Installing Oh My ZSH
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+
+
+#Installing OhMyZSH plugins and themes
+
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
