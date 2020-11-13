@@ -107,9 +107,10 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+bindkey -v
+export KEYTIMEOUT=1
+export GO111MODULE=on
 
 alias att="sudo apt update && sudo apt upgrade && sudo apt autoclean && sudo apt autoclean"
 alias apti="sudo apt install"
@@ -121,6 +122,14 @@ alias gitm="git commit -m"
 alias gitp="git push"
 alias v="nvim"
 alias ls="colorls"
+alias bat="batcat"
+alias pingo="ping www.google.com"
+alias dpkgi="sudo dpkg -i"
+alias gitpr="git --set-upstream"
+alias svim="NVIM_LISTEN_ADDRESS=/tmp/nvimsocket nvim"
+alias artisan="php artisan"
+
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
