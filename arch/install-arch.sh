@@ -51,7 +51,6 @@ rm -rf ~/Downloads/*
 #Installing Oh My ZSH
 sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
-
 #Installing OhMyZSH plugins and themes
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions

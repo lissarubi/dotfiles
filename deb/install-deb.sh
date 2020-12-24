@@ -6,11 +6,11 @@ sudo rm /var/lib/dpkg/lock-frontend
 sudo rm /var/cache/apt/archives/lock
 
 #Installing programs using APT
-sudo apt install -y ffmpeg automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev zlib1g-dev sqlite3 libsqlite3-dev gparted xorg zsh curl audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop neofetch ranger snapd ssh tmux vim zsh aptitude suckless-tools chromium-codecs-ffmpeg-extra zathura sxiv traceroute sl guake build-essential g++ gcc make postgresql postgresql-contrib libpq-dev fonts-firacode supertux  ack breeze xclip flameshot neovim pavucontrol re2c libjpeg-dev libonig-dev libzip-dev composer bat rofi lxappearance feh compton php7.4 ruby nodejs
+sudo apt install -y ffmpeg automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev zlib1g-dev sqlite3 libsqlite3-dev gparted xorg zsh curl audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop neofetch ranger snapd ssh tmux vim zsh aptitude suckless-tools chromium-codecs-ffmpeg-extra zathura sxiv traceroute sl guake build-essential g++ gcc make postgresql postgresql-contrib libpq-dev fonts-firacode supertux  ack breeze xclip flameshot neovim pavucontrol re2c libjpeg-dev libonig-dev libzip-dev composer bat rofi lxappearance feh compton php8.0 ruby nodejs
 
 # Installing Polybar
 
-sudo apt-get install \
+sudo apt-get install -y \
   cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev \
   libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev \
   libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen \
@@ -39,7 +39,7 @@ sudo snap install code --classic
 
 #Installing OBS Studio
 sudo add-apt-repository ppa:obsproject/obs-studio
-sudo apt-get update && sudo apt-get install obs-studio
+sudo apt-get update && sudo apt-get install -y obs-studio
 
 #Installing Kdenlive
 mkdir ~/software
