@@ -112,7 +112,7 @@ bindkey -v
 export KEYTIMEOUT=1
 export GO111MODULE=on
 
-alias att="sudo apt update && sudo apt upgrade && sudo apt autoclean && sudo apt autoclean"
+alias att="sudo apt update && sudo apt upgrade && sudo apt autoclean && sudo apt autoremove"
 alias apti="sudo apt install"
 alias aptr="sudo apt remove"
 alias aptud="sudo apt update"
