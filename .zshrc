@@ -128,8 +128,16 @@ alias dpkgi="sudo dpkg -i"
 alias gitpr="git --set-upstream"
 alias svim="NVIM_LISTEN_ADDRESS=/tmp/nvimsocket nvim"
 alias artisan="php artisan"
+alias untar="tar -xzf"
+alias php="php8.0"
+alias phprun="php8.0 -S localhost:8080"
+alias amysql="mysql -u $USER -p"
 
-export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export PATH="$HOME/.config/composer/vendor/bin:$HOME/go/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/ederson/.sdkman"
+[[ -s "/home/ederson/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ederson/.sdkman/bin/sdkman-init.sh"
