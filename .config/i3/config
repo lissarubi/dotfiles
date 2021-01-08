@@ -9,7 +9,6 @@ font pango: Noto Sans 10
 floating_modifier $super
 
 #autostart
-exec --no-startup-id hsetroot -center ~/.wallpaper.png
 exec --no-startup-id xsettingsd &
 exec --no-startup-id compton -b
 exec --no-startup-id polybar -r main
@@ -36,10 +35,6 @@ bindsym $super+Ctrl+Right resize shrink width 10 px or 10 ppt
 bindsym $super+Ctrl+Up resize grow height 10 px or 10 ppt
 bindsym $super+Ctrl+Down resize shrink height 10 px or 10 ppt
 bindsym $super+Ctrl+Left resize grow width 10 px or 10 ppt
-
-# gaps between windows
-bindsym $super+s gaps inner current plus 5
-bindsym $super+Shift+s gaps inner current minus 5
 
 #change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
