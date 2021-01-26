@@ -3,7 +3,7 @@
 sudo pacman -Syu
 
 #Installing programs using APT
-sudo pacman -S ffmpeg automake autoconf gparted xorg zsh curl audacity w3m supertux cmatrix frei0r-plugins git htop neofetch ranger snapd openssh tmux vim zathura sxiv traceroute sl guake base-devel gcc make postgresql ttf-fira-code supertux  ack xclip flameshot neovim pavucontrol composer bat rofi lxappearance feh compton polybar php obs-studio flameshot ruby nodejs dmenu go noto-fonts-emoji alacritty
+sudo pacman -S ffmpeg automake autoconf gparted xorg zsh curl audacity w3m supertux cmatrix frei0r-plugins git htop neofetch ranger snapd openssh tmux vim zathura sxiv traceroute sl guake base-devel gcc make postgresql ttf-fira-code supertux  ack xclip flameshot neovim pavucontrol composer bat rofi lxappearance feh compton polybar php obs-studio flameshot ruby nodejs dmenu go noto-fonts-emoji alacritty feh rofi sway swaylock compton
 
 # Installing my Nvim config
 
