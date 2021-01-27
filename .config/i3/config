@@ -10,7 +10,7 @@ floating_modifier $super
 
 #autostart
 exec --no-startup-id xsettingsd &
-exec --no-startup-id compton -b
+exec --no-startup-id picom
 exec --no-startup-id polybar -r main
 exec --no-startup-id feh --bg-fill Pictures/bg.jpg
 exec_always --no-startup-id numlockx on
