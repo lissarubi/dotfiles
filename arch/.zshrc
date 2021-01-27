@@ -110,6 +110,13 @@ bindkey -v
 export KEYTIMEOUT=1
 export GO111MODULE=on
 
+alias pmclean="sudo pacman -Qdtq | sudo pacman -Rs -"
+alias pmi="sudo pacman -S"
+alias pmu="sudo pacman -Syu"
+alias pms="sudo pacman -Ss"
+alias pmis="sudo pacman -Qs"
+alias cleanpac="paccache -r && pacman -Sc"
+
 alias gita="git add ."
 alias gitm="git commit -m"
 alias gitp="git push"
