@@ -37,7 +37,7 @@ mv kdenlive-20.04.0-x86_64.appimage kdenlive20.04.appimage
 cd ~
 
 #Installing programs using NPM
-sudo npm install expo prettier typescript markpdf @prettier/plugin-php intelephense esling eslint-plugin-vue -g
+sudo npm install prettier markpdf @prettier/plugin-php intelephense eslint eslint-plugin-vue -g
 
 #Installing Powerline10k theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
