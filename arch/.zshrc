@@ -81,8 +81,6 @@ plugins=(
   zsh-autosuggestions
 )
 
-. $HOME/.asdf/asdf.sh
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -112,25 +110,27 @@ bindkey -v
 export KEYTIMEOUT=1
 export GO111MODULE=on
 
-alias att="sudo apt update && sudo apt upgrade && sudo apt autoclean && sudo apt autoclean"
-alias apti="sudo apt install"
-alias aptr="sudo apt remove"
-alias aptud="sudo apt update"
-alias aptug="sudo apt upgrade"
 alias gita="git add ."
 alias gitm="git commit -m"
 alias gitp="git push"
 alias v="nvim"
 alias ls="colorls"
-alias bat="batcat"
 alias pingo="ping www.google.com"
 alias dpkgi="sudo dpkg -i"
 alias gitpr="git --set-upstream"
-alias svim="NVIM_LISTEN_ADDRESS=/tmp/nvimsocket nvim"
 alias artisan="php artisan"
 alias untar="tar -xzf"
+alias phprun="php8.0 -S localhost:8080"
+alias amysql="mysql -u $USER -p"
 
-export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
+alias grun='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
+
+
+export PATH="$HOME/.config/composer/vendor/bin:$HOME/go/bin:/home/$USER/.gem/ruby/2.7.0/bin:$PATH"
+
+export CLASSPATH=".:/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH"
+export GOPATH=$(go env GOPATH)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
