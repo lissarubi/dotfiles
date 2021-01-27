@@ -6,7 +6,6 @@ sudo pacman -Syu
 sudo pacman -S ffmpeg automake autoconf gparted xorg zsh curl audacity w3m supertux cmatrix frei0r-plugins git htop neofetch ranger snapd openssh tmux vim zathura sxiv traceroute sl guake base-devel gcc make postgresql ttf-fira-code supertux  ack xclip flameshot neovim pavucontrol composer bat rofi lxappearance feh compton polybar php obs-studio flameshot ruby nodejs dmenu go noto-fonts-emoji alacritty feh rofi sway swaylock compton ttf-droid ttf-dejavu ttf-ubuntu-font-family
 
 # Installing my Nvim config
-
 mkdir ~/.config/nvim
 git clone https://github.com/edersonferreira/nvim-cfg ~/.config/nvim
 
@@ -27,6 +26,18 @@ sudo snap install photogimp opera
 
 #Installing VSCode using Snap
 sudo snap install code --classic
+
+# Install Paru
+
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+
+# Installing AUR's
+
+paru flat-remix flat-remix-gtk
+
 
 #Installing Kdenlive
 mkdir ~/software
