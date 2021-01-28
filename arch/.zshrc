@@ -112,6 +112,7 @@ export GO111MODULE=on
 
 alias pmclean="sudo pacman -Qdtq | sudo pacman -Rs -"
 alias pmi="sudo pacman -S"
+alias pmr="sudo pacman -R"
 alias pmu="sudo pacman -Syu && paru"
 alias pms="sudo pacman -Ss"
 alias pmis="sudo pacman -Qs"
