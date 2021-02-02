@@ -116,7 +116,7 @@ alias pmr="sudo pacman -R"
 alias pmu="sudo pacman -Syu && paru"
 alias pms="sudo pacman -Ss"
 alias pmis="sudo pacman -Qs"
-alias cleanpac="paccache -r && pacman -Sc"
+alias cleanpac="sudo paccache -r && sudo pacman -Sc"
 
 alias gita="git add ."
 alias gitm="git commit -m"
