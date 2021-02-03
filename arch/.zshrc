@@ -110,6 +110,8 @@ bindkey -v
 export KEYTIMEOUT=1
 export GO111MODULE=on
 
+alias sudo="doas"
+
 alias pmclean="doas pacman -Qdtq | doas pacman -Rs -"
 alias pmi="doas pacman -S"
 alias pmr="doas pacman -R"
