@@ -36,7 +36,12 @@ makepkg -si
 
 # Installing AUR's
 
-paru flat-remix flat-remix-gtk obs-studio-git bashtop dmenu-edersonferreira-git glow
+paru flat-remix
+paru flat-remix-gtk
+paru obs-studio-git
+paru bashtop
+paru dmenu-edersonferreira-git
+paru glow
 
 # Installing Virtual Box
 
