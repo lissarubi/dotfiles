@@ -136,7 +136,7 @@ alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPAT
 alias grun='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
 
 
-export PATH="$HOME/.config/composer/vendor/bin:$HOME/go/bin:/home/$USER/.gem/ruby/2.7.0/bin:$PATH"
+export PATH="$HOME/.config/composer/vendor/bin:$HOME/go/bin:$HOME/.local/share/gem/ruby/2.7.0/bin:$PATH"
 
 export CLASSPATH=".:/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH"
 export GOPATH=$(go env GOPATH)
