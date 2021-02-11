@@ -13,7 +13,6 @@ exec --no-startup-id xsettingsd &
 exec --no-startup-id picom
 exec --no-startup-id polybar -r main
 exec --no-startup-id feh --bg-fill Pictures/bg.jpg
-exec --no-start-id export LC_ALL=C
 exec_always --no-startup-id numlockx on
 
 # start a terminal
