@@ -18,13 +18,7 @@ exec_always --no-startup-id numlockx on
 # start a terminal
 bindsym $super+Return exec alacritty
 
-# alt tab like ($super+tab)
-bindsym $super+Tab exec rofi -modi combi -combi-modi window -show combi -theme dalton -icon-theme "Flat-Remix-Dark-Blue" -show-icons
-
-bindsym $super+d exec rofi  -show drun -theme dalton -icon-theme "Flat-Remix-Dark-Blue" -show-icons
-
-# start dmenu (a program launcher)
-bindsym $super+Shift+d exec i3-dmenu-desktop --dmenu="dmenu -i -fn 'Noto Sans:size=8'"
+bindsym $super+d exec dmenu_run -c -l 20 -i
 
 # common apps keybinds
 bindsym Print exec scrot 'Cheese_%a-%d%b%y_%H.%M.png' -e 'viewnior ~/$f'
