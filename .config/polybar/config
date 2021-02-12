@@ -27,14 +27,14 @@ line-color = #f00
 ;border-size = 0
 ;border-color = #00000000
 
-padding-left = 0
-padding-right = 2
+padding-left = 2
+padding-right = 4
 
 module-margin-left = 1
 module-margin-right = 1
 
 ;font-0 = fixed:pixelsize=10;1
-font-0 = "xos4 Terminess Powerline:pixelsize=10;1"
+font-0 = "xos4 Terminess:pixelsize=10;1"
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = "Wuncon Siji:pixelsize=10;1"
 ;font-3 = FontAwesome:size=7
@@ -68,7 +68,7 @@ label = %title:0:30:...%
 
 [module/filesystem]
 type = internal/fs
-interval = 25
+interval = 60
 mount-0 = /
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
