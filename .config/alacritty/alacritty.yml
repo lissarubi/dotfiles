@@ -3,24 +3,23 @@ font:
   size: 12
 
   normal:
-    family: Fira Code Medium
+    family: JetBrainsMono Nerd Font
     # Style can be specified to pick a specific face.
 
   # The bold font face
   bold:
-    family: Fira Code
+    family: JetBrainsMono Nerd Font
     # Style can be specified to pick a specific face.
 
   # The italic font face
   italic:
-    family: Fira Code Italic
+    family: JetBrainsMono Nerd Font
     # Style can be specified to pick a specific face.
 
-# Colors (Hyper)
 colors:
   # Default colors
   primary:
-    background: '0x000000'
+    background: '0x0C0A0F'
     foreground: '0xffffff'
   cursor:
     text: '0x000000'
@@ -48,4 +47,4 @@ colors:
     cyan:    '0x00ffff'
     white:   '0xFFFFFF'
 
-background_opacity: 0.8
+background_opacity: 0.9

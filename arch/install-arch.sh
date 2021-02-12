@@ -38,7 +38,7 @@ makepkg -si
 
 paru flat-remix
 paru flat-remix-gtk
-paru obs-studio-git
+paru obs-studio-browser
 paru bashtop
 paru dmenu-edersonferreira-git
 paru glow
