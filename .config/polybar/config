@@ -33,9 +33,9 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = "xos4 Terminess:pixelsize=12;1"
+font-0 = "JetBrainsMono Nerd Font:pixelsize=11;1"
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = "Wuncon Siji:pixelsize=10;1"
+font-2 = "JetBrainsMono Nerd Font:pixelsize=10;1"
 
 modules-left = bspwm i3
 modules-center =
@@ -136,14 +136,14 @@ type = internal/cpu
 interval = 2
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #253340
-label = %percentage:2%%
+label =  %percentage:2%%
 
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #253340
-label = %percentage_used%%
+label =  %percentage_used%%
 
 [module/wlan]
 type = internal/network
