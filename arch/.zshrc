@@ -123,7 +123,7 @@ alias gita="git add ."
 alias gitm="git commit -m"
 alias gitp="git push"
 alias v="nvim"
-alias ls="colorls"
+alias ls="lsd"
 alias pingo="ping www.google.com"
 alias dpkgi="doas dpkg -i"
 alias gitpr="git --set-upstream"
@@ -146,3 +146,5 @@ export GOPATH=$(go env GOPATH)
 
 export VISUAL=vim;
 export EDITOR=vim;
+
+GO111MODULE=auto
