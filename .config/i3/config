@@ -17,7 +17,7 @@ exec_always --no-startup-id numlockx on
 
 # open some pessoal programs
 #
-bindsym $super+i exec firefox
+bindsym $super+i exec firefox-developer-edition
 bindsym $super+o exec discord
 bindsym $super+p exec gimp
 
