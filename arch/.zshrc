@@ -117,7 +117,7 @@ alias pmr="doas pacman -R"
 alias pmu="paru"
 alias pms="doas pacman -Ss"
 alias pmis="doas pacman -Qs"
-alias cleanpac="doas paccache -r && doas pacman -Sc"
+alias cleanpac="doas paccache -r && doas pacman -Sc && doas paru -Scc"
 
 alias gita="git add ."
 alias gitm="git commit -m"
@@ -131,6 +131,9 @@ alias artisan="php artisan"
 alias untar="tar -xzf"
 alias phprun="php8.0 -S localhost:8080"
 alias amysql="mysql -u $USER -p"
+alias sym="symfony"
+alias cmdsym="php bin/console"
+alias firefox="firefox-developer-edition"
 
 alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
 alias grun='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
