@@ -11,19 +11,16 @@ floating_modifier $super
 #autostart
 exec --no-startup-id xsettingsd &
 exec --no-startup-id picom
+exec --no-startup-id lxsession
 exec --no-startup-id polybar -r main
 exec --no-startup-id feh --bg-fill Pictures/bg.jpg
 exec_always --no-startup-id numlockx on
 
 # open some pessoal programs
-#
+
 bindsym $super+i exec firefox-developer-edition
 bindsym $super+o exec discord
 bindsym $super+p exec gimp
-
-bindsym $super+j exec alacritty -e ranger ~/development
-bindsym $super+k exec alacritty -e ranger ~/.config
-bindsym $super+l exec alacritty -e ranger
 
 # start a terminal
 bindsym $super+Return exec alacritty
@@ -119,14 +116,6 @@ bindsym $super+Shift+r restart
 bindsym $super+q exec "i3-nagbar -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
-mode "resize" {
-        bindsym Left resize shrink width 5 px or 5 ppt
-        bindsym Down resize grow height 5 px or 5 ppt
-        bindsym Up resize shrink height 5 px or 5 ppt
-        bindsym Right resize grow width 5 px or 5 ppt
-        bindsym Return mode "default"
-}
-bindsym $super+r mode "resize"
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #253340 #253340 #ffffff #2e9ef4   #285577

@@ -3,7 +3,7 @@
 sudo pacman -Syu
 
 #Installing programs using APT
-sudo pacman -S alacritty audacity autoconf automake base-devel bat cmatrix composer ctags curl doneack feh feh ffmpeg firefox-developer-edition-i18n-en-us flameshot frei0r-plugins gcc git go gparted htop lsd lxappearance make neofetch nodejs noto-fonts-emoji opendoas openssh pavucontrol php picom polybar postgresql python-pip ranger ruby sl snapd supertux supertux  sxiv tmux traceroute ttf-dejavu ttf-droid ttf-fira-code ttf-ubuntu-font-family ueberzug vim virtualbox virtualbox-guest-iso w3m xclip xorg zathura-pdf-poppler zsh
+sudo pacman -S alacritty audacity autoconf automake base-devel bat cmatrix composer ctags curl doneack feh ffmpeg firefox-developer-edition-i18n-en-us flameshot frei0r-plugins gcc git go gparted htop lsd lxappearance lxsession make neofetch nodejs noto-fonts-emoji opendoas openssh pavucontrol php picom polybar postgresql python-pip ranger ruby sl snapd supertux sxiv tmux traceroute ttf-dejavu ttf-droid ttf-fira-code ttf-ubuntu-font-family ueberzug vim virtualbox virtualbox-guest-iso w3m xclip xorg zathura-pdf-poppler zsh
 
 # Installing my Nvim config
 mkdir ~/.config/nvim
