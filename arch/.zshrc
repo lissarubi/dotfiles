@@ -110,6 +110,8 @@ bindkey -v
 export KEYTIMEOUT=1
 export GO111MODULE=on
 
+HISTSIZE=100000
+SAVEHIST=$HISTSIZE
 
 alias pmclean="sudo pacman -Qdtq | sudo pacman -Rs -"
 alias pmi="doas pacman -S"
