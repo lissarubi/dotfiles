@@ -5,6 +5,14 @@ set $alt Mod1
 # set font
 font pango: Noto Sans 10
 
+# gaps
+smart_gaps on
+gaps inner 15
+bindsym $super+n gaps inner current plus 5
+bindsym $super+m gaps inner current minus 5
+bindsym $super+Shift+n gaps outer current plus 5
+bindsym $super+Shift+m gaps outer current minus 5
+
 # Use Mouse+$super to drag floating windows to their wanted position
 floating_modifier $super
 
@@ -66,6 +74,9 @@ bindsym $super+Shift+Down move down
 bindsym $super+Shift+Up move up
 bindsym $super+Shift+Right move right
 
+# global windows
+bindsym $super+g exec echo 'globalwindow'
+
 # split in horizontal orientation
 bindsym $super+h split h
 
@@ -125,7 +136,7 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 # window rules, you can find the window class using xprop
-for_window [class=".*"] border pixel 0 
+for_window [class=".*"] border pixel 0
 for_window [class=Viewnior|sxiv|Audacious|File-roller|Lxappearance|Lxtask|Pavucontrol] floating enable
 for_window [class=URxvt|Firefox|Geany|Evince|Soffice|libreoffice*|celluloid|Ghb|Xfburn|Gimp*|Inkscape|Vlc|Lxappearance|Audacity] focus
 for_window [class=Xfburn|GParted|System-config-printer.py|Lxtask|Pavucontrol|Exo-helper*|Lxrandr|Arandr] focus
