@@ -7,7 +7,7 @@ font pango: Noto Sans 10
 
 # gaps
 smart_gaps on
-gaps inner 15
+gaps inner 8
 bindsym $super+n gaps inner current plus 5
 bindsym $super+m gaps inner current minus 5
 bindsym $super+Shift+n gaps outer current plus 5
@@ -24,11 +24,15 @@ exec --no-startup-id polybar -r main
 exec --no-startup-id feh --bg-fill Pictures/bg.jpg
 exec_always --no-startup-id numlockx on
 
-# open some pessoal programs
+# dunst shortcuts
+bindsym Ctrl+space exec dunstctl close
+bindsym Ctrl+Shift+space exec dunstctl close-all
 
-bindsym $super+i exec firefox-developer-edition
+# open some pessoal programs
+bindsym $super+i exec firefox-nightly
 bindsym $super+o exec discord
 bindsym $super+p exec gimp
+bindsym $super+F1 exec alacritty -e paru
 
 # start a terminal
 bindsym $super+Return exec alacritty
@@ -39,10 +43,15 @@ bindsym $super+d exec dmenu_run -c -l 20 -i
 bindsym Print exec scrot 'Cheese_%a-%d%b%y_%H.%M.png' -e 'viewnior ~/$f'
 
 # resize windows
-bindsym $super+Ctrl+Right resize shrink width 10 px or 10 ppt
-bindsym $super+Ctrl+Up resize grow height 10 px or 10 ppt
-bindsym $super+Ctrl+Down resize shrink height 10 px or 10 ppt
-bindsym $super+Ctrl+Left resize grow width 10 px or 10 ppt
+bindsym $super+Ctrl+Right resize shrink width 5 px or 5 ppt
+bindsym $super+Ctrl+Up resize grow height 5 px or 5 ppt
+bindsym $super+Ctrl+Down resize shrink height 5 px or 5 ppt
+bindsym $super+Ctrl+Left resize grow width 5 px or 5 ppt
+
+bindsym $super+Ctrl+h resize shrink width 5 px or 5 ppt
+bindsym $super+Ctrl+k resize grow height 5 px or 5 ppt
+bindsym $super+Ctrl+j resize shrink height 5 px or 5 ppt
+bindsym $super+Ctrl+l resize grow width 5 px or 5 ppt
 
 #change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
@@ -68,20 +77,31 @@ bindsym $super+Down focus down
 bindsym $super+Up focus up
 bindsym $super+Right focus right
 
+bindsym $super+l focus left
+bindsym $super+j focus down
+bindsym $super+k focus up
+bindsym $super+h focus right
+
+
 # move focused window
 bindsym $super+Shift+Left move left
 bindsym $super+Shift+Down move down
 bindsym $super+Shift+Up move up
 bindsym $super+Shift+Right move right
 
+bindsym $super+Shift+l move left
+bindsym $super+Shift+j move down
+bindsym $super+Shift+k move up
+bindsym $super+Shift+h move right
+
 # global windows
 bindsym $super+g exec echo 'globalwindow'
 
 # split in horizontal orientation
-bindsym $super+h split h
+bindsym $super+a split h
 
 # split in vertical orientation
-bindsym $super+v split v
+bindsym $super+s split v
 
 # enter fullscreen mode for the focused container
 bindsym $super+f fullscreen toggle
@@ -135,8 +155,11 @@ client.unfocused        #14191F #14191F #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
+# borders
+for_window [class=".*"] border pixel 2
+smart_borders on
+
 # window rules, you can find the window class using xprop
-for_window [class=".*"] border pixel 0
 for_window [class=Viewnior|sxiv|Audacious|File-roller|Lxappearance|Lxtask|Pavucontrol] floating enable
 for_window [class=URxvt|Firefox|Geany|Evince|Soffice|libreoffice*|celluloid|Ghb|Xfburn|Gimp*|Inkscape|Vlc|Lxappearance|Audacity] focus
 for_window [class=Xfburn|GParted|System-config-printer.py|Lxtask|Pavucontrol|Exo-helper*|Lxrandr|Arandr] focus
