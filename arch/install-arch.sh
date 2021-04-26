@@ -3,7 +3,7 @@
 sudo pacman -Syu
 
 #Installing programs using APT
-sudo pacman -S alacritty audacity autoconf automake base-devel bat cmatrix composer ctags curl doneack feh ffmpeg firefox-developer-edition-i18n-en-us flameshot frei0r-plugins gcc git go gparted htop i3-gaps lsd lxappearance lxsession make neofetch nodejs noto-fonts-emoji opendoas openssh pavucontrol php picom polybar postgresql python-pip ranger ruby sl snapd supertux sxiv tmux traceroute ttf-dejavu ttf-droid ttf-fira-code ttf-ubuntu-font-family ueberzug vim virtualbox virtualbox-guest-iso w3m xclip xorg zathura-pdf-poppler zsh
+sudo pacman -S alacritty audacity autoconf automake base-devel bat cmatrix composer ctags curl doneack dunst feh ffmpeg firefox-nightly flameshot frei0r-plugins gcc git go gparted htop i3-gaps lsd lxappearance lxsession make neofetch nodejs noto-fonts-emoji opendoas openssh pavucontrol php picom polybar postgresql python-pip ranger ruby sl snapd supertux sxiv tmux traceroute ttf-dejavu ttf-droid ttf-fira-code ttf-ubuntu-font-family ueberzug vim virtualbox virtualbox-guest-iso w3m xclip xorg zathura-pdf-poppler zsh
 
 # Installing my Nvim config
 mkdir ~/.config/nvim
@@ -87,5 +87,8 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+git clone https://github.com/jeffreytse/zsh-vi-mode \
+  $ZSH/custom/plugins/zsh-vi-mode
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
