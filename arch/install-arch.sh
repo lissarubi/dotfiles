@@ -3,7 +3,7 @@
 sudo pacman -Syu
 
 #Installing programs using APT
-sudo pacman -S alacritty audacity autoconf automake base-devel bat cmatrix composer ctags curl doneack dunst feh ffmpeg firefox-nightly flameshot frei0r-plugins gcc git go gparted htop i3-gaps lsd lxappearance lxsession make neofetch nodejs noto-fonts-emoji opendoas openssh pavucontrol php picom polybar postgresql python-pip ranger ruby sl snapd supertux sxiv tmux traceroute ttf-dejavu ttf-droid ttf-fira-code ttf-ubuntu-font-family ueberzug vim virtualbox virtualbox-guest-iso w3m xclip xorg zathura-pdf-poppler zsh
+sudo pacman -S alacritty audacity autoconf automake base-devel bat cmatrix composer ctags curl doneack dunst feh ffmpeg firefox-nightly flameshot frei0r-plugins gcc git go gparted htop i3-gaps lsd lxappearance lxsession make neofetch nodejs noto-fonts-emoji opendoas openssh pavucontrol php polybar postgresql python-pip ranger ruby sl snapd supertux sxiv tmux traceroute ttf-dejavu ttf-droid ttf-fira-code ttf-ubuntu-font-family ueberzug vim virtualbox virtualbox-guest-iso w3m xclip xorg zathura-pdf-poppler zsh
 
 # Installing my Nvim config
 mkdir ~/.config/nvim
@@ -36,7 +36,6 @@ makepkg -si
 
 # Installing AUR's
 
-paru betterdiscordctl-git
 paru bibata-cursor-theme
 paru cef-minimal-3770-bin
 paru dmenu-edersonferreira-git
@@ -50,6 +49,7 @@ paru obs-studio-browser
 paru openh264
 paru pacvis-git
 paru pamac-aur
+paru picom-jonaburg-git
 paru python-ueberzug-git
 paru siji-git
 paru ttf-devicons
