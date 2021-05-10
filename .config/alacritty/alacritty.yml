@@ -47,4 +47,4 @@ colors:
     cyan:    '0x00ffff'
     white:   '0xFFFFFF'
 
-background_opacity: 0.9
+background_opacity: 0.8
