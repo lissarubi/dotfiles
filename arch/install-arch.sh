@@ -38,7 +38,7 @@ makepkg -si
 
 paru bibata-cursor-theme
 paru cef-minimal-3770-bin
-paru dmenu-edersonferreira-git
+paru dmenu-edersonferreira
 paru flat-remix
 paru flat-remix-gtk
 paru glow
