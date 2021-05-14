@@ -38,7 +38,6 @@ makepkg -si
 
 paru bibata-cursor-theme
 paru cef-minimal-3770-bin
-paru dmenu-edersonferreira
 paru flat-remix
 paru flat-remix-gtk
 paru glow
@@ -53,6 +52,14 @@ paru picom-jonaburg-git
 paru python-ueberzug-git
 paru siji-git
 paru ttf-devicons
+
+# Install my Dmenu build
+
+cd /tmp
+git clone https://github.com/edersonferreira/dmenu-edersonferreira
+cd dmenu-edersonferreira
+sudo make install
+cd
 
 # Installing Virtual Box
 
