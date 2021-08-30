@@ -40,6 +40,7 @@ paru bibata-cursor-theme
 paru cef-minimal-3770-bin
 paru flat-remix
 paru flat-remix-gtk
+paru fzf
 paru glow
 paru mkinitcpio-openswap
 paru modhammer-edersonferreira-git
@@ -52,6 +53,7 @@ paru picom-jonaburg-git
 paru python-ueberzug-git
 paru siji-git
 paru ttf-devicons
+paru zoxide
 
 # Install my Dmenu build
 

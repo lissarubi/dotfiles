@@ -79,6 +79,7 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
+  zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,36 +107,40 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 
-bindkey -v
 export KEYTIMEOUT=1
 export GO111MODULE=on
 
 HISTSIZE=100000
 SAVEHIST=$HISTSIZE
 
+alias cleanpac="doas paccache -r && doas pacman -Sc && doas paru -Scc"
 alias pmclean="sudo pacman -Qdtq | sudo pacman -Rs -"
 alias pmi="doas pacman -S"
-alias pmr="doas pacman -R"
-alias pmu="paru"
-alias pms="doas pacman -Ss"
 alias pmis="doas pacman -Qs"
-alias cleanpac="doas paccache -r && doas pacman -Sc && doas paru -Scc"
+alias pmr="doas pacman -R"
+alias pms="doas pacman -Ss"
+alias pmu="paru"
 
+alias amysql="mysql -u $USER -p"
+alias artisan="php artisan"
+alias cd="z"
+alias cmdsym="php bin/console"
+alias dpkgi="doas dpkg -i"
+alias firefox="firefox-developer-edition"
 alias gita="git add ."
 alias gitm="git commit -m"
 alias gitp="git push"
-alias v="nvim"
-alias ls="lsd"
-alias pingo="ping www.google.com"
-alias dpkgi="doas dpkg -i"
 alias gitpr="git --set-upstream"
-alias artisan="php artisan"
-alias untar="tar -xzf"
+alias kb="kubectl"
+alias ls="lsd"
+alias pest="./vendor/bin/pest"
 alias phprun="php8.0 -S localhost:8080"
-alias amysql="mysql -u $USER -p"
+alias pingo="ping www.google.com"
+alias startdocker="sudo systemctl start docker"
+alias stopdocker="sudo systemctl stop docker"
 alias sym="symfony"
-alias cmdsym="php bin/console"
-alias firefox="firefox-developer-edition"
+alias untar="tar -xzf"
+alias v="nvim"
 
 alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
 alias grun='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
@@ -153,3 +158,5 @@ export VISUAL=vim;
 export EDITOR=vim;
 
 GO111MODULE=auto
+
+eval "$(zoxide init zsh)"
