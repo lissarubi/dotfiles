@@ -117,8 +117,8 @@ bindsym $super+space floating toggle
 bindsym $super+Shift+space focus mode_toggle
 
 # switch to workspace
-bindsym $alt+Control+Right workspace next
-bindsym $alt+Control+Left workspace prev
+bindsym $super+$alt+Right workspace next
+bindsym $super+$alt+Left workspace prev
 
 bindsym $super+1 workspace 1
 bindsym $super+2 workspace 2
@@ -150,6 +150,7 @@ bindsym $super+x move container to output left; focus output left
 bindsym $super+Tab focus output left
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+#
 bindsym $super+Shift+r restart
 
 # exit i3

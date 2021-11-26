@@ -6,22 +6,7 @@ sudo rm /var/lib/dpkg/lock-frontend
 sudo rm /var/cache/apt/archives/lock
 
 #Installing programs using APT
-sudo apt install -y ffmpeg automake autoconf libreadline-dev libncurses-dev libssl-dev libyaml-dev libxslt-dev libffi-dev libtool unixodbc-dev zlib1g-dev sqlite3 libsqlite3-dev gparted xorg zsh curl audacity w3m supertux cmatrix dreamchess frei0r-plugins git htop neofetch ranger snapd ssh tmux vim zsh aptitude suckless-tools chromium-codecs-ffmpeg-extra zathura sxiv traceroute sl guake build-essential g++ gcc make postgresql postgresql-contrib libpq-dev fonts-firacode supertux  ack breeze xclip flameshot neovim pavucontrol re2c libjpeg-dev libonig-dev libzip-dev composer bat rofi lxappearance feh compton php8.0 ruby nodejs
-
-# Installing Polybar
-
-sudo apt-get install -y \
-  cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev \
-  libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev \
-  libxcb-util0-dev libxcb-xkb-dev pkg-config python-xcbgen \
-  xcb-proto libxcb-xrm-dev i3-wm libasound2-dev libmpdclient-dev \
-  libiw-dev libcurl4-openssl-dev libpulse-dev \
-  libxcb-composite0-dev xcb libxcb-ewmh2
-git clone https://github.com/jaagr/polybar.git
-cd polybar
-git tag # see what version do you need
-git checkout 3.4.1
-./build.sh
+sudo apt install -y ffmpeg ack aptitude audacity autoconf automake bat breeze build-essential chromium-codecs-ffmpeg-extra cmatrix code composer compton curl dreamchess dunst feh flameshot fonts-firacode frei0r-plugins g++ gcc gimp git gparted guake htop libcairo2-dev libffi-dev libjpeg-dev libncurses-dev libonig-dev libpq-dev libreadline-dev libsqlite3-dev libssl-dev libtool libxslt-dev libyaml-dev libzip-dev lxappearance lxsession make neofetch neovim nodejs pavucontrol pavucontrol php polybar postgresql postgresql-contrib ranger re2c ruby sl snapd sqlite3 ssh suckless-tools supertux supertux  sxiv tmux traceroute unixodbc-dev vim w3m xclip xorg xsettingsd zathura zlib1g-dev zsh zsh
 
 # Installing my Nvim config
 
@@ -31,23 +16,9 @@ git clone https://github.com/edersonferreira/nvim-cfg ~/.config/nvim
 #Installing gems
 gem install colorls betterfile colorize runcs gcli generategem solargraph
 
-#Instalando programs with snap
-sudo snap install photogimp opera
-
-#Installing VSCode using Snap
-sudo snap install code --classic
-
 #Installing OBS Studio
 sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt-get update && sudo apt-get install -y obs-studio
-
-#Installing Kdenlive
-mkdir ~/software
-cd ~/software 
-wget https://files.kde.org/kdenlive/release/kdenlive-20.04.0-x86_64.appimage
-chmod +x kdenlive-20.04.0-x86_64.appimage
-mv kdenlive-20.04.0-x86_64.appimage kdenlive20.04.appimage
-cd ~
 
 #Installing programs using NPM
 sudo npm install prettier markpdf @prettier/plugin-php intelephense eslint eslint-plugin-vue -g

@@ -117,20 +117,36 @@ alias apti="sudo apt install"
 alias aptr="sudo apt remove"
 alias aptud="sudo apt update"
 alias aptug="sudo apt upgrade"
+alias ls="colorls"
+alias dpkgi="sudo dpkg -i"
+alias gitpr="git --set-upstream"
+
+alias bat="batcat"
+alias amysql="mysql -u $USER -p"
+alias artisan="php artisan"
+alias cd="z"
+alias cmdsym="php bin/console"
+alias dpkgi="doas dpkg -i"
+alias firefox="firefox-developer-edition"
 alias gita="git add ."
 alias gitm="git commit -m"
 alias gitp="git push"
-alias v="nvim"
-alias ls="colorls"
-alias bat="batcat"
-alias pingo="ping www.google.com"
-alias dpkgi="sudo dpkg -i"
 alias gitpr="git --set-upstream"
-alias svim="NVIM_LISTEN_ADDRESS=/tmp/nvimsocket nvim"
-alias artisan="php artisan"
+alias kb="kubectl"
+alias ls="lsd"
+alias pest="./vendor/bin/pest"
+alias phprun="php8.0 -S localhost:8080"
+alias pingo="ping www.google.com"
+alias startdocker="sudo systemctl start docker"
+alias stopdocker="sudo systemctl stop docker"
+alias sym="symfony"
 alias untar="tar -xzf"
+alias v="nvim"
 
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+export VISUAL=vim;
+export EDITOR=vim;
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
