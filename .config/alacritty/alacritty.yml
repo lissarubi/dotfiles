@@ -17,34 +17,28 @@ font:
     # Style can be specified to pick a specific face.
 
 colors:
-  # Default colors
   primary:
-    background: '0x0C0A0F'
-    foreground: '0xffffff'
-  cursor:
-    text: '0x000000'
-    cursor: '0xffffff'
+    background: '0x282828'
+    foreground: '0xdfbf8e'
 
-  # Normal colors
   normal:
-    black:   '0x000000'
-    red:     '0xfe0100'
-    green:   '0x33ff00'
-    yellow:  '0xfeff00'
-    blue:    '0x0066ff'
-    magenta: '0xcc00ff'
-    cyan:    '0x00ffff'
-    white:   '0xd0d0d0'
+    black:   '0x665c54'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe78a4e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xdfbf8e'
 
-  # Bright colors
   bright:
-    black:   '0x808080'
-    red:     '0xfe0100'
-    green:   '0x33ff00'
-    yellow:  '0xfeff00'
-    blue:    '0x0066ff'
-    magenta: '0xcc00ff'
-    cyan:    '0x00ffff'
-    white:   '0xFFFFFF'
+    black:   '0x928374'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe3a84e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xdfbf8e'
 
 background_opacity: 0.8
