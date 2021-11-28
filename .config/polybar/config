@@ -1,5 +1,5 @@
 [colors]
-background = #0C0A0F
+background = #0C0AF
 background-alt = #161419
 foreground = #ffffff
 foreground-alt = #555
@@ -85,7 +85,7 @@ label-mode-background = ${colors.primary}
 
 label-focused = %index%
 label-focused-background = #161419
-label-focused-underline = #2B7DF0
+label-focused-underline = #f88909
 label-focused-padding = 2
 
 label-unfocused = %index%
@@ -108,7 +108,7 @@ label-separator-foreground = #5C6773
 type = internal/cpu
 interval = 2
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #2B7DF0
+format-underline = #f88909
 format-background = #161419
 format-padding = 1
 label =  %percentage:2%%
@@ -117,7 +117,7 @@ label =  %percentage:2%%
 type = internal/memory
 interval = 2
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #2B7DF0
+format-underline = #f88909
 format-background = #161419
 format-padding = 1
 label =  %percentage_used%%
@@ -128,7 +128,7 @@ interface = wlp0s26u1u4
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-underline = #2B7DF0
+format-underline = #f88909
 format-background = #161419
 format-padding = 1
 label-connected = %essid%
@@ -160,7 +160,7 @@ date-alt = " %d-%m-%Y"
 
 time = %H:%M:%S
 time-alt = %H:%M:%S
-format-underline = #2B7DF0
+format-underline = #f88909
 format-background = #161419
 format-padding = 1
 
@@ -176,7 +176,7 @@ click-left = ~/.config/polybar/polybar-scripts/pavolume.sh --togmute
 scrool-up = ~/.config/polybar/polybar-scripts/pavolume.sh --up
 scrool-down = ~/.config/polybar/polybar-scripts/pavolume.sh --down
 format-foreground = ${colors.foreground}
-format-underline = #2B7DF0
+format-underline = #f88909
 format-background = #161419
 format-padding = 1
 
@@ -219,7 +219,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #2B7DF0
+format-underline = #f88909
 format-background = #161419
 format-padding = 1
 format-warn = <ramp> <label-warn>
