@@ -23,7 +23,8 @@ workspace_auto_back_and_forth yes
 exec --no-startup-id feh --bg-fill ~/.bg.png
 exec --no-startup-id lxsession
 exec --no-startup-id picom
-exec --no-startup-id xrandr --output HDMI-A-0 --primary
+exec --no-startup-id discord
+exec --no-startup-id firefox-nighly
 exec --no-startup-id xsettingsd &
 exec --no-startup-id ~/.config/polybar/polybar-monitors.sh
 exec_always --no-startup-id numlockx on
@@ -33,9 +34,8 @@ bindsym Ctrl+space exec dunstctl close
 bindsym Ctrl+Shift+space exec dunstctl close-all
 
 # open some pessoal programs
-bindsym $super+i exec firefox-nightly
-bindsym $super+o exec discord
-bindsym $super+p exec gimp
+bindsym $super+p exec firefox-nightly
+bindsym $super+o exec gimp
 bindsym $super+F1 exec alacritty -e paru
 
 # start a terminal
