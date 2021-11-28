@@ -2,32 +2,9 @@
 
 ![Screen capture of my desktop](assets/capture01.png)
 
-# Actual OS
+# OS
 
-ArcoLinux (Arch Linux based)
-
-# Programs
-
-- alacritty
-- bat
-- dunst
-- feh
-- firefox-nightly
-- flameshot
-- go
-- i3-gaps
-- lsd
-- lxappearance
-- lxsession
-- neofetch
-- neovim
-- opendoas
-- pavucontrol
-- picom
-- polybar
-- ranger
-- sl
-- sxiv
+Arch Linux (Installed with Arch Linux GUI)
 
 # Workflow
 
@@ -43,4 +20,4 @@ To code and edit text, I use Neovim, a editor with a lot of mappings to delete, 
 
 As terminal emulator, I use Alacritty, a fast terminal written in Rust language, and Alacritty fits perfectly with window managers like I3wm
 
-And to install AUR packages, I like to use Paru, a useful program to install AUR packages.
+And to install AUR packages, I use Paru, a useful program to install AUR packages.
