@@ -34,8 +34,9 @@ bindsym Ctrl+space exec dunstctl close
 bindsym Ctrl+Shift+space exec dunstctl close-all
 
 # open some pessoal programs
-bindsym $super+p exec firefox-nightly
+bindsym $super+i exec nautilus
 bindsym $super+o exec gimp
+bindsym $super+p exec firefox-nightly
 bindsym $super+F1 exec alacritty -e paru
 
 # start a terminal
@@ -47,15 +48,15 @@ bindsym $super+d exec dmenu_run -c -l 20 -i
 bindsym Print exec scrot 'Cheese_%a-%d%b%y_%H.%M.png' -e 'viewnior ~/$f'
 
 # resize windows
-bindsym $super+Ctrl+Right resize shrink width 5 px or 5 ppt
-bindsym $super+Ctrl+Up resize grow height 5 px or 5 ppt
-bindsym $super+Ctrl+Down resize shrink height 5 px or 5 ppt
-bindsym $super+Ctrl+Left resize grow width 5 px or 5 ppt
+bindsym $super+Ctrl+Right resize shrink width 30 px or 30 ppt
+bindsym $super+Ctrl+Up resize grow height 30 px or 30 ppt
+bindsym $super+Ctrl+Down resize shrink height 30 px or 30 ppt
+bindsym $super+Ctrl+Left resize grow width 30 px or 30 ppt
 
-bindsym $super+Ctrl+h resize shrink width 5 px or 5 ppt
-bindsym $super+Ctrl+k resize grow height 5 px or 5 ppt
-bindsym $super+Ctrl+j resize shrink height 5 px or 5 ppt
-bindsym $super+Ctrl+l resize grow width 5 px or 5 ppt
+bindsym $super+Ctrl+h resize shrink width 30 px or 30 ppt
+bindsym $super+Ctrl+k resize grow height 30 px or 30 ppt
+bindsym $super+Ctrl+j resize shrink height 30 px or 30 ppt
+bindsym $super+Ctrl+l resize grow width 30 px or 30 ppt
 
 #change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
