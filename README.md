@@ -1,7 +1,5 @@
 # Dotfiles
 
-![Screen capture of my desktop](assets/capture01.png)
-
 # OS
 
 Arch Linux (Installed with Arch Linux GUI)
