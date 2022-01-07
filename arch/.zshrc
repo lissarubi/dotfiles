@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ederson/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -110,8 +110,9 @@ source $ZSH/oh-my-zsh.sh
 export KEYTIMEOUT=1
 export GO111MODULE=on
 
-HISTSIZE=100000
-SAVEHIST=$HISTSIZE
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=10000000
+SAVEHIST=10000000
 
 alias cleanpac="doas paccache -r && doas pacman -Sc && doas paru -Scc"
 alias pmclean="sudo pacman -Qdtq | sudo pacman -Rs -"
@@ -125,14 +126,13 @@ alias amysql="mysql -u $USER -p"
 alias artisan="php artisan"
 alias cd="z"
 alias cmdsym="php bin/console"
-alias dpkgi="doas dpkg -i"
-alias firefox="firefox-developer-edition"
+alias doom="$HOME/.emacs.d/bin/doom"
 alias gita="git add ."
 alias gitm="git commit -m"
 alias gitp="git push"
 alias gitpr="git --set-upstream"
 alias kb="kubectl"
-alias ls="lsd"
+alias ls="$HOME/.cargo/bin/lsd"
 alias pest="./vendor/bin/pest"
 alias phprun="php8.0 -S localhost:8080"
 alias pingo="ping www.google.com"
@@ -140,14 +140,13 @@ alias startdocker="sudo systemctl start docker"
 alias stopdocker="sudo systemctl stop docker"
 alias sym="symfony"
 alias untar="tar -xzf"
-alias v="nvim"
+alias v="neovide"
 
-alias antlr4='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.Tool'
-alias grun='java -Xmx500M -cp "/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH" org.antlr.v4.gui.TestRig'
+alias antlr4='java -Xmx500M -cp "$HOME/.jars/antlr-4.9.3-complete.jar" org.antlr.v4.Tool'
+alias grun='java -Xmx500M -cp "$HOME/.jars/antlr-4.9.3-complete.jar" org.antlr.v4.gui.TestRig'
 
 
-export PATH="$HOME/.config/composer/vendor/bin:$HOME/go/bin:$HOME/.local/share/gem/ruby/2.7.0/bin:$PATH"
-
+export PATH="$HOME/.config/composer/vendor/bin:$HOME/go/bin:$HOME/.local/share/gem/ruby/2.7.0/bin:$PATH:$HOME/.symfony/bin:$PATH"
 export CLASSPATH=".:/usr/local/lib/antlr-4.9-complete.jar:$CLASSPATH"
 export GOPATH=$(go env GOPATH)
 
