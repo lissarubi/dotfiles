@@ -24,7 +24,7 @@ exec --no-startup-id feh --bg-fill ~/.bg.png
 exec --no-startup-id lxsession
 exec --no-startup-id picom
 exec --no-startup-id discord
-exec --no-startup-id firefox-nighly
+exec --no-startup-id firefox-nightly
 exec --no-startup-id xsettingsd &
 exec --no-startup-id ~/.config/polybar/polybar-monitors.sh
 exec_always --no-startup-id numlockx on
@@ -48,15 +48,15 @@ bindsym $super+d exec dmenu_run -c -l 20 -i
 bindsym Print exec scrot 'Cheese_%a-%d%b%y_%H.%M.png' -e 'viewnior ~/$f'
 
 # resize windows
-bindsym $super+Ctrl+Right resize shrink width 30 px or 30 ppt
-bindsym $super+Ctrl+Up resize grow height 30 px or 30 ppt
-bindsym $super+Ctrl+Down resize shrink height 30 px or 30 ppt
-bindsym $super+Ctrl+Left resize grow width 30 px or 30 ppt
+bindsym $super+Ctrl+Right resize shrink width 15 px or 15 ppt
+bindsym $super+Ctrl+Up resize grow height 15 px or 15 ppt
+bindsym $super+Ctrl+Down resize shrink height 15 px or 15 ppt
+bindsym $super+Ctrl+Left resize grow width 15 px or 15 ppt
 
-bindsym $super+Ctrl+h resize shrink width 30 px or 30 ppt
-bindsym $super+Ctrl+k resize grow height 30 px or 30 ppt
-bindsym $super+Ctrl+j resize shrink height 30 px or 30 ppt
-bindsym $super+Ctrl+l resize grow width 30 px or 30 ppt
+bindsym $super+Ctrl+h resize shrink width 15 px or 15 ppt
+bindsym $super+Ctrl+k resize grow height 15 px or 15 ppt
+bindsym $super+Ctrl+j resize shrink height 15 px or 15 ppt
+bindsym $super+Ctrl+l resize grow width 15 px or 15 ppt
 
 #change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
@@ -171,6 +171,4 @@ for_window [class=".*"] border pixel 2
 smart_borders on
 
 # window rules, you can find the window class using xprop
-for_window [class=Viewnior|sxiv|Audacious|File-roller|Lxappearance|Lxtask|Pavucontrol] floating enable
-for_window [class=URxvt|Firefox|Geany|Evince|Soffice|libreoffice*|celluloid|Ghb|Xfburn|Gimp*|Inkscape|Vlc|Lxappearance|Audacity] focus
-for_window [class=Xfburn|GParted|System-config-printer.py|Lxtask|Pavucontrol|Exo-helper*|Lxrandr|Arandr] focus
+for_window [class=Viewnior|sxiv|File-roller|Lxappearance|Lxtask|Pavucontrol|Arandr] floating enable
