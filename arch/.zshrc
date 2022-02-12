@@ -114,12 +114,12 @@ HISTFILE="$HOME/.zsh_history"
 HISTSIZE=10000000
 SAVEHIST=10000000
 
-alias cleanpac="doas paccache -r && doas pacman -Sc && doas paru -Scc"
+alias cleanpac="sudo paccache -r && sudo pacman -Sc && sudo paru -Scc"
 alias pmclean="sudo pacman -Qdtq | sudo pacman -Rs -"
-alias pmi="doas pacman -S"
-alias pmis="doas pacman -Qs"
-alias pmr="doas pacman -R"
-alias pms="doas pacman -Ss"
+alias pmi="sudo pacman -S"
+alias pmis="sudo pacman -Qs"
+alias pmr="sudo pacman -R"
+alias pms="sudo pacman -Ss"
 alias pmu="paru"
 
 alias amysql="mysql -u $USER -p"
