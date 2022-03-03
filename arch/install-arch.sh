@@ -2,14 +2,13 @@
 
 sudo pacman -Syu
 
-#Installing programs using APT
+#Installing programs using pacman
 
 sudo pacman -S ack alacritty audacity autoconf automake base-devel bat cmatrix composer ctags curl dunst feh ffmpeg flameshot frei0r-plugins gcc gimp git go gparted htop i3-gaps lsd lxappearance lxsession make neofetch nodejs noto-fonts-emoji npm openssh pavucontrol php postgresql python-pip ranger ruby sl supertux sxiv tmux traceroute ttf-dejavu ttf-droid ttf-fira-code ttf-ubuntu-font-family ueberzug vim virtualbox virtualbox-guest-iso w3m xclip xorg zathura-pdf-poppler zsh
 
-# Installing my Nvim config
+# Installing LunarVim
 
-mkdir ~/.config/nvim
-git clone https://github.com/edersonferreira/nvim-cfg ~/.config/nvim
+bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
 
 #Installing gems
 
@@ -42,7 +41,6 @@ paru fzf
 paru glow
 paru intellij-idea-ce
 paru mkinitcpio-openswap
-paru modhammer-edersonferreira-git
 paru neovim-git
 paru obs-studio-browser
 paru openh264
@@ -63,8 +61,8 @@ python3 -m pip install --user --upgrade pynvim
 # Install my Dmenu build
 
 cd /tmp
-git clone https://github.com/edersonferreira/dmenu-edersonferreira
-cd dmenu-edersonferreira
+git clone https://github.com/lissaferreira/dmenu-lissaferreira
+cd dmenu-lissaferreira
 sudo make install
 cd
 

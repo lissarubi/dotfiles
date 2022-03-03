@@ -12,9 +12,9 @@ To rice my bar, I use Polybar. Polybar have a lot of modules and configs for eac
 
 To display notifications, I use Dunst. Dunst is a simple notification manager, it can display notifications from Discord, Kdenlive,etc. in a customized way.
 
-To run aplications, I use [my Dmenu build](https://github.com/edersonferreira/dmenu-edersonferreira), a suckless aplication runner.
+To run aplications, I use [my Dmenu build](https://github.com/lissaferreira/dmenu-lissaferreira), a suckless aplication runner.
 
-To code and edit text, I use Neovim, a editor with a lot of mappings to delete, edit, add, move around the text,etc. With the configs [here](https://github.com/edersonferreira/nvim-config)
+To code and edit text, I use Neovim, a editor with a lot of mappings to delete, edit, add, move around the text,etc. specifically [LunarVim](https://www.lunarvim.org/) configs.
 
 As terminal emulator, I use Alacritty, a fast terminal written in Rust language, and Alacritty fits perfectly with window managers like I3wm
 

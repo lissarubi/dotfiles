@@ -20,11 +20,11 @@ floating_modifier $super
 workspace_auto_back_and_forth yes
 
 #autostart
-exec --no-startup-id feh --bg-fill ~/.bg.png
-exec --no-startup-id lxsession
-exec --no-startup-id picom
 exec --no-startup-id discord
 exec --no-startup-id firefox-nightly
+exec --no-startup-id lxsession
+exec --no-startup-id nitrogen --restore &
+exec --no-startup-id picom
 exec --no-startup-id xsettingsd &
 exec --no-startup-id ~/.config/polybar/polybar-monitors.sh
 exec_always --no-startup-id numlockx on
@@ -34,6 +34,10 @@ bindsym Ctrl+space exec dunstctl close
 bindsym Ctrl+Shift+space exec dunstctl close-all
 
 # open some pessoal programs
+bindsym $super+h exec ~/software/kdenlive-21.08.3-x86_64.appimage
+bindsym $super+j exec firefox-nightly https://canva.com
+bindsym $super+k exec firefox-nightly https://keep.google.com
+bindsym $super+l exec alacritty -e $HOME/.local/bin/lvim
 bindsym $super+i exec nautilus
 bindsym $super+o exec gimp
 bindsym $super+p exec firefox-nightly
@@ -81,11 +85,6 @@ bindsym $super+Left focus left
 bindsym $super+Down focus down
 bindsym $super+Up focus up
 bindsym $super+Right focus right
-
-bindsym $super+l focus left
-bindsym $super+j focus down
-bindsym $super+k focus up
-bindsym $super+h focus right
 
 # move focused window
 bindsym $super+Shift+Left move left
