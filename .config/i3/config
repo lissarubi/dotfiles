@@ -26,7 +26,7 @@ exec --no-startup-id lxsession
 exec --no-startup-id nitrogen --restore &
 exec --no-startup-id picom
 exec --no-startup-id xsettingsd &
-exec --no-startup-id ~/.config/polybar/polybar-monitors.sh
+exec ~/.config/polybar/polybar-monitors.sh
 exec_always --no-startup-id numlockx on
 
 # dunst shortcuts
@@ -34,7 +34,7 @@ bindsym Ctrl+space exec dunstctl close
 bindsym Ctrl+Shift+space exec dunstctl close-all
 
 # open some pessoal programs
-bindsym $super+h exec ~/software/kdenlive-21.08.3-x86_64.appimage
+bindsym $super+h exec ~/software/kdenlive-21.12.3-x86_64.AppImage
 bindsym $super+j exec firefox-nightly https://canva.com
 bindsym $super+k exec firefox-nightly https://keep.google.com
 bindsym $super+l exec alacritty -e $HOME/.local/bin/lvim
