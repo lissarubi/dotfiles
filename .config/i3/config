@@ -34,7 +34,7 @@ bindsym Ctrl+space exec dunstctl close
 bindsym Ctrl+Shift+space exec dunstctl close-all
 
 # open some pessoal programs
-bindsym $super+h exec ~/software/kdenlive-21.12.3-x86_64.AppImage
+bindsym $super+h exec kdenlive
 bindsym $super+j exec firefox-nightly https://canva.com
 bindsym $super+k exec firefox-nightly https://keep.google.com
 bindsym $super+l exec alacritty -e $HOME/.local/bin/lvim

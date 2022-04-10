@@ -4,7 +4,7 @@ sudo pacman -Syu
 
 #Installing programs using pacman
 
-sudo pacman -S ack alacritty audacity autoconf automake base-devel bat cmatrix composer ctags curl dunst feh ffmpeg flameshot frei0r-plugins gcc gimp git go gparted htop i3-gaps lsd lxappearance lxsession make neofetch nodejs noto-fonts-emoji npm openssh pavucontrol php postgresql python-pip ranger ruby sl supertux sxiv tmux traceroute ttf-dejavu ttf-droid ttf-fira-code ttf-ubuntu-font-family ueberzug vim virtualbox virtualbox-guest-iso w3m xclip xorg zathura-pdf-poppler zsh
+sudo pacman -S ack alacritty audacity autoconf automake base-devel bat cmatrix composer ctags curl dunst feh ffmpeg flameshot frei0r-plugins gcc gimp git go gparted htop i3-gaps lsd lxappearance lxsession make neofetch nodejs noto-fonts-emoji npm openssh kdenlive pavucontrol php postgresql python-pip ranger ruby sl supertux sxiv tmux traceroute ttf-dejavu ttf-droid ttf-fira-code ttf-ubuntu-font-family ueberzug vim virtualbox virtualbox-guest-iso w3m xclip xorg zathura-pdf-poppler zsh
 
 # Installing LunarVim
 
@@ -70,15 +70,6 @@ cd
 
 sudo echo "vboxdrv" >> /etc/modules-load.d/virtualbox.conf
 sudo usermod -aG vboxusers $USER
-
-#Installing Kdenlive
-
-mkdir ~/software
-cd ~/software 
-wget https://files.kde.org/kdenlive/release/kdenlive-20.04.0-x86_64.appimage
-chmod +x kdenlive-20.04.0-x86_64.appimage
-mv kdenlive-20.04.0-x86_64.appimage kdenlive20.04.appimage
-cd ~
 
 #Installing programs using NPM
 
