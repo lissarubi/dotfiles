@@ -21,7 +21,7 @@ workspace_auto_back_and_forth yes
 
 #autostart
 exec --no-startup-id discord
-exec --no-startup-id firefox-nightly
+exec --no-startup-id firefox
 exec --no-startup-id lxsession
 exec --no-startup-id nitrogen --restore &
 exec --no-startup-id picom
@@ -35,12 +35,12 @@ bindsym Ctrl+Shift+space exec dunstctl close-all
 
 # open some pessoal programs
 bindsym $super+h exec kdenlive
-bindsym $super+j exec firefox-nightly https://canva.com
-bindsym $super+k exec firefox-nightly https://keep.google.com
+bindsym $super+j exec firefox https://canva.com
+bindsym $super+k exec firefox https://keep.google.com
 bindsym $super+l exec alacritty -e $HOME/.local/bin/lvim
 bindsym $super+i exec nautilus
 bindsym $super+o exec gimp
-bindsym $super+p exec firefox-nightly
+bindsym $super+p exec firefox
 bindsym $super+F1 exec alacritty -e paru
 
 # start a terminal
