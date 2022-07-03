@@ -32,7 +32,7 @@ font-2 = "JetBrainsMono Nerd Font:pixelsize=12;0"
 
 modules-left = bspwm i3
 modules-center =
-modules-right = filesystem xbacklight pavolume memory cpu wlan eth temperature date
+modules-right = filesystem xbacklight pipewire-simple memory cpu wlan eth temperature date
 
 tray-position = right
 tray-padding = 2
@@ -85,7 +85,7 @@ label-mode-background = ${colors.primary}
 
 label-focused = %index%
 label-focused-background = #161419
-label-focused-underline = #f88909
+label-focused-underline = #ff0000
 label-focused-padding = 2
 
 label-unfocused = %index%
@@ -108,7 +108,7 @@ label-separator-foreground = #5C6773
 type = internal/cpu
 interval = 2
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f88909
+format-underline = #ff0000
 format-background = #161419
 format-padding = 1
 label =  %percentage:2%%
@@ -117,7 +117,7 @@ label =  %percentage:2%%
 type = internal/memory
 interval = 2
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f88909
+format-underline = #ff0000
 format-background = #161419
 format-padding = 1
 label =  %percentage_used%%
@@ -128,7 +128,7 @@ interface = wlp0s26u1u4
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-underline = #f88909
+format-underline = #ff0000
 format-background = #161419
 format-padding = 1
 label-connected = %essid%
@@ -160,25 +160,23 @@ date-alt = " %d-%m-%Y"
 
 time = %H:%M:%S
 time-alt = %H:%M:%S
-format-underline = #f88909
+format-underline = #ff0000
 format-background = #161419
 format-padding = 1
 
 label = %date% %time%
 
-[module/pavolume]
+[module/pipewire-simple]
 type = custom/script
-tail = true
-label = %output%
-exec = ~/.config/polybar/polybar-scripts/pavolume.sh --listen
-click-right = exec pavucontrol
-click-left = ~/.config/polybar/polybar-scripts/pavolume.sh --togmute
-scrool-up = ~/.config/polybar/polybar-scripts/pavolume.sh --up
-scrool-down = ~/.config/polybar/polybar-scripts/pavolume.sh --down
-format-foreground = ${colors.foreground}
-format-underline = #f88909
+exec = ~/.config/polybar/polybar-scripts/pipewire-simple.sh
+interval = 3
+format-underline = #ff0000
 format-background = #161419
 format-padding = 1
+click-right = exec pavucontrol &
+click-left = ~/polybar-scripts/pipewire-simple.sh --mute &
+scroll-up = ~/polybar-scripts/pipewire-simple.sh --up &
+scroll-down = ~/polybar-scripts/pipewire-simple.sh --down &
 
 [module/battery]
 type = internal/battery
@@ -219,7 +217,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #f88909
+format-underline = #ff0000
 format-background = #161419
 format-padding = 1
 format-warn = <ramp> <label-warn>
