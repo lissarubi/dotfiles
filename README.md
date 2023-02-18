@@ -1,21 +1,57 @@
 # Dotfiles
 
-# OS
+## OS
 
-Arch Linux (Installed with Arch Linux GUI)
+Arch Linux
 
-# Workflow
+## Hyprland (currently)
 
-I use I3wm as my window manager. I3wm is a very simple to use window manager, fast, and minimal in RAM/CPU use.
+- WM: hyprland
+- Bar: waybar
+- App Launcher: rofi
+- Notifications Manager: dunst
+- Background Manager: swaybg
+- Color Picker: hyprpicker
+- Logout: wlogout
 
-To rice my bar, I use Polybar. Polybar have a lot of modules and configs for each part of the bar. Like clock, workspaces, RAM use,etc.
+![screen capture](./assets/hyprland.png)
 
-To display notifications, I use Dunst. Dunst is a simple notification manager, it can display notifications from Discord, Kdenlive,etc. in a customized way.
+## I3wm (past)
 
-To run aplications, I use [my Dmenu build](https://github.com/lissaferreira/dmenu-lissaferreira), a suckless aplication runner.
+- WM: i3wm
+- Bar: polybar
+- App Launcher: dmenu
+- Notifications Manager: dunst
+- Background Manager: nitrogen
 
-To code and edit text, I use Neovim, a editor with a lot of mappings to delete, edit, add, move around the text,etc. specifically [LunarVim](https://www.lunarvim.org/) configs.
+![screen capture](./assets/i3wm.png)
 
-As terminal emulator, I use Alacritty, a fast terminal written in Rust language, and Alacritty fits perfectly with window managers like I3wm
+## Install
 
-And to install AUR packages, I use Paru, a useful program to install AUR packages.
+### Arch Linux
+
+Clone the repository
+
+```sh
+git clone https://github.com/lissatransborda/dotfiles --depth 1
+```
+
+run `install-arch.sh` file
+
+```
+cd dotfiles/arch && ./install-arch.sh
+```
+
+### Ubuntu based distros
+
+Clone the repository
+
+```sh
+git clone https://github.com/lissatransborda/dotfiles --depth 1
+```
+
+run `install-deb.sh` file
+
+```
+cd dotfiles/arch && ./install-deb.sh
+```
