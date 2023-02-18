@@ -13,6 +13,7 @@ Arch Linux
 - Background Manager: swaybg
 - Color Picker: hyprpicker
 - Logout: wlogout
+- Editor: LunarVim
 
 ![screen capture](./assets/hyprland.png)
 
