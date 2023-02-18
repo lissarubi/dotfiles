@@ -24,6 +24,7 @@ Arch Linux
 - App Launcher: dmenu
 - Notifications Manager: dunst
 - Background Manager: nitrogen
+- [My old Nvim config](https://github.com/lissatransborda/nvim-config)
 
 ![screen capture](./assets/i3wm.png)
 
