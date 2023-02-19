@@ -44,6 +44,7 @@ paru pamac-aur
 paru picom-jonaburg-git
 paru polybar
 paru python-ueberzug-git
+paru rofi-lbonn-wayland
 paru siji-git
 paru spotify
 paru ttf-devicons
