@@ -1,0 +1,162 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: JetBrains Mono Medium, monospace;
+  font-weight: bold;
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+  color: #cad3f5;
+}
+
+tooltip {
+  background: #1e1e2e;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #11111b;
+}
+
+#workspaces button {
+  padding: 5px;
+  color: #cad3f5;
+  font-size: 16px;
+  transition-duration: 300ms;
+}
+
+#workspaces button.active {
+  color: #24273a;
+  background-color: #32bcd9;
+  border-radius: 5px;
+}
+
+#workspaces button.focused {
+  color: #a6adc8;
+  background: #121212;
+  border-radius: 5px;
+}
+
+#workspaces button.urgent {
+  color: #24273a;
+  background: #d93232;
+  border-radius: 5px;
+}
+
+#workspaces button:hover {
+  background: #45d932;
+  color: #24273a;
+  border-radius: 5px;
+}
+
+#custom-language,
+#custom-updates,
+#custom-caffeine,
+#custom-weather,
+#custom-spotify,
+#window,
+#clock,
+#cpu,
+#memory,
+#battery,
+#pulseaudio,
+#network,
+#workspaces,
+#tray,
+#backlight {
+  background: #1e2030;
+  padding: 0px 10px;
+  margin: 3px 0px;
+}
+
+#tray {
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#workspaces {
+  background: #1e2030;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+#custom-caffeine {
+  color: #89dceb;
+  border-radius: 10px 0px 0px 10px;
+  border-right: 0px;
+  margin-left: 10px;
+}
+
+#custom-language {
+  color: #f38ba8;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#cpu {
+  color: #f5c2e7;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#memory {
+  color: #ccd4ff;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#custom-updates {
+  color: #ccccff;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.custom-spotify {
+  color: #1db954;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#window {
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#clock {
+  color: #ffff9f;
+  margin-left: 0px;
+  border-right: 0px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+#network {
+  color: #f9e2af;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+#pulseaudio {
+  color: #89b4fa;
+  border-left: 0px;
+  border-right: 0px;
+  margin-right: 15px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+#battery {
+  color: #a6e3a1;
+  margin-right: 10px;
+  border-left: 0px;
+}
+
+#custom-weather {
+  border-radius: 0px 10px 10px 0px;
+  border-right: 0px;
+  margin-left: 0px;
+}
