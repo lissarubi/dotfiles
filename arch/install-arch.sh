@@ -51,6 +51,7 @@ paru ttf-devicons
 paru waybar-hyprland-git
 paru wlogout
 paru wlr-randr
+paru xdg-desktop-portal-hyprland
 paru zoxide
 
 # Install Spicetify
