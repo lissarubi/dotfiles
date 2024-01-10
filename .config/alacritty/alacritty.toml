@@ -1,0 +1,14 @@
+[font]
+size = 12
+
+[font.bold]
+family = "JetBrainsMono"
+
+[font.italic]
+family = "JetBrainsMono"
+
+[font.normal]
+family = "JetBrainsMono"
+
+[window]
+opacity = 0.9

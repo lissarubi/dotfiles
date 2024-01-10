@@ -17,7 +17,7 @@ font:
     # Style can be specified to pick a specific face.
     #
 window:
-  opacity: 0.7
+  opacity: 0.9
 
-import:
-  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+# import:
+#   - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
