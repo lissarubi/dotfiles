@@ -22,8 +22,8 @@ sudo apt-get update && sudo apt-get install -y obs-studio
 #Installing programs using NPM
 sudo npm install prettier markpdf @prettier/plugin-php intelephense eslint eslint-plugin-vue -g
 
-#Installing Powerline10k theme
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+#Installing OhMyPosh
+curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
 
 #Apt upgrade
 sudo apt upgrade -y ; sudo apt dist-upgrade -y

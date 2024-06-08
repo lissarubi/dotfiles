@@ -2,9 +2,16 @@
 
 ## OS
 
-Arch Linux
+Pop OS
 
-## Hyprland (currently)
+## Gnome (currently)
+
+- DE: Gnome
+- Editor: DOOM Emacs
+
+![screen capture](./assets/gnome.png)
+
+## Hyprland (past)
 
 - WM: hyprland
 - Bar: waybar
@@ -44,7 +51,7 @@ run `install-arch.sh` file
 cd dotfiles/arch && ./install-arch.sh
 ```
 
-### Ubuntu based distros
+### Debian based distros
 
 Clone the repository
 
