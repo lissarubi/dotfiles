@@ -22,6 +22,9 @@ sudo apt-get update && sudo apt-get install -y obs-studio
 #Installing programs using NPM
 sudo npm install prettier markpdf @prettier/plugin-php intelephense eslint eslint-plugin-vue -g
 
+#Installing hstr
+sudo add-apt-repository ppa:ultradvorka/ppa && sudo apt-get update && sudo apt-get install hstr && hstr --show-configuration >> ~/.zshrc && . ~/.zshrc
+
 #Installing OhMyPosh
 curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
 
